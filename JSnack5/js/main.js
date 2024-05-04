@@ -10,17 +10,16 @@ const numInserimenti=6;
 // Chiedi per 6 volte all’utente di inserire un numero
 
 for (let i=0; i < numInserimenti; i++ ){
-    let buffer = prompt(`Inserisci il numero ${i+1} di ${numInserimenti} `);
-    if( !isNaN (Number(buffer) )){
+    let buffer = Number(prompt(`Inserisci il numero ${i+1} di ${numInserimenti} `));
+    if( !isNaN (buffer)){
         listaInserimenti[i] = buffer;
         console.log(listaInserimenti[i]);
     }
-    else{
-        console.log('This is not a number')
+    else {
+        console.log('Questo non è un numero')
         i--;
     }
 }
-
 // Se è dispari inseriscilo nell’array
 
 for (let i=0; i < 6; i++ ){
