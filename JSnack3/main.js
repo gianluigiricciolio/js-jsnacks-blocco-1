@@ -1,16 +1,11 @@
 'use strict';
 
-
-const listaNumeri = [];
+// valore che somma tutti gli ingressi
 let somma=0;
+// numero che indica il totale degli input
+let numeroInput=10;
 
-
-
-for (let i = 0; i < 10; i++){
-    listaNumeri[i]=Number(prompt (`inserire numero ${i}`));
-}
-
-for (let i = 0; i < 10; i++){
-    somma+=listaNumeri[i];
+for (let i = 0; i < numeroInput; i++){
+    somma+=Number(prompt (`inserire numero ${i}`));
 }
 
